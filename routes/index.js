@@ -1,4 +1,5 @@
 var express = require('express');
+var gitstar = require('../git_star');
 var router = express.Router();
 
 var username = "";
@@ -14,8 +15,14 @@ router.get('/', function (req, res, next) {
 
 router.post('/', function (req, res, next) {
   username = req.body.input;
-  value = "aaa";
-  res.redirect('/');
+  gitstar(username, function (result, message) {
+    if (message.length > 0) {
+      value = message;
+    } else {
+      value = "Star-Index: " + result;
+    }
+    res.redirect('/');
+  });
 });
 
 
