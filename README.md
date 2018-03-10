@@ -4,7 +4,7 @@ An application to calculate the Star Index of a user on GitHub. It is similar to
 ### Steps to run the application
 1. Clone the repository. You must have node.js and npm installed on your machine.  
 2. Set an environment variable for the personal access token of your github account with the name ```GITTOKEN```  
-3. Go the project directory.  
-4. run ```npm install```  
-5. finally run ```npm start```  
-6. the application runs on http://localhost:8080/  
+3. Go to the project directory.  
+4. Run ```npm install```  
+5. Finally run ```npm start```  
+6. The application runs on http://localhost:8080/  
